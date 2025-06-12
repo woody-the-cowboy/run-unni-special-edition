@@ -23,7 +23,7 @@ export function gameInitAnimatorCallback() {
 */
 export function drawCallbacks() {
   // calc respect
-  if (ANIMATION_VARS.spaceAnimator.status) scoreBoard.respect += 0.1
+  if (ANIMATION_VARS.spaceAnimator.status) scoreBoard.respect += 1
 
   // draw indicators
   GEM_INDICATOR.innerText = scoreBoard.magesticGem;

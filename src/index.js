@@ -1,5 +1,6 @@
 // This page gonna be different. Currently spin up a basic game
 import { DEBUG } from "./game/conf.js"
+import { version } from "./special-edition.js"
 import { Game } from "./game.js"
 import { getUIInvocation, bindUIBtns, bindUIBasics, ModalMan } from "./utils/ui.js";
 import { audioEngine } from "./audio-engine/engine.js"

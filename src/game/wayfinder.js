@@ -123,8 +123,8 @@ export class Wayfinder {
 
     this.xNextPath = 0; // initial path x pos
     this.yNextPath = CANVAS_DIMENTIONS.height - 90; // initial path height
-    this.maxGap = 350;
-    this.minGap = 200;
+    this.maxGap = 250;
+    this.minGap = 180;
     this.maxY = CANVAS_DIMENTIONS.height - 80;
     this.minY = CANVAS_DIMENTIONS.height - 250;
 

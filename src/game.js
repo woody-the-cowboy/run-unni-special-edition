@@ -36,34 +36,34 @@ export class Game extends EventTarget {
 
   phaseAnimator(wayfinder) {
     // making it in layman terms just for in level customisations
-    if (this.levelPassed === 4 && scoreBoard.respect > 1000) {
-      // level 5
-      this.levelPassed = 5;
-      ANIMATION_VARS.animationSpeed += 0.1;
-      wayfinder.minGap += wayfinder.minGap * 0.1;
-      wayfinder.maxGap += wayfinder.maxGap * 0.1;
-    }
-    else if (this.levelPassed === 3 && scoreBoard.respect > 800) {
-      // level 4
-      this.levelPassed = 4;
-      ANIMATION_VARS.animationSpeed += 0.1;
-      wayfinder.minGap += wayfinder.minGap * 0.1;
-      wayfinder.maxGap += wayfinder.maxGap * 0.1;
-    }
-    else if (this.levelPassed === 2 && scoreBoard.respect > 500) {
-      // level 3
-      this.levelPassed = 3;
-      ANIMATION_VARS.animationSpeed += 0.1;
-      wayfinder.minGap += wayfinder.minGap * 0.1;
-      wayfinder.maxGap += wayfinder.maxGap * 0.1;
-    }
-    else if (this.levelPassed === 1 && scoreBoard.respect > 300) {
-      // level 2
-      this.levelPassed = 2;
-      ANIMATION_VARS.animationSpeed += 0.1;
-      wayfinder.minGap += wayfinder.minGap * 0.1;
-      wayfinder.maxGap += wayfinder.maxGap * 0.1;
-    }
+    // if (this.levelPassed === 4 && scoreBoard.respect > 1000) {
+    //   // level 5
+    //   this.levelPassed = 5;
+    //   ANIMATION_VARS.animationSpeed += 0.1;
+    //   wayfinder.minGap += wayfinder.minGap * 0.1;
+    //   wayfinder.maxGap += wayfinder.maxGap * 0.1;
+    // }
+    // else if (this.levelPassed === 3 && scoreBoard.respect > 800) {
+    //   // level 4
+    //   this.levelPassed = 4;
+    //   ANIMATION_VARS.animationSpeed += 0.1;
+    //   wayfinder.minGap += wayfinder.minGap * 0.1;
+    //   wayfinder.maxGap += wayfinder.maxGap * 0.1;
+    // }
+    // else if (this.levelPassed === 2 && scoreBoard.respect > 500) {
+    //   // level 3
+    //   this.levelPassed = 3;
+    //   ANIMATION_VARS.animationSpeed += 0.1;
+    //   wayfinder.minGap += wayfinder.minGap * 0.1;
+    //   wayfinder.maxGap += wayfinder.maxGap * 0.1;
+    // }
+    // else if (this.levelPassed === 1 && scoreBoard.respect > 600) {
+    //   // level 2
+    //   this.levelPassed = 2;
+    //   ANIMATION_VARS.animationSpeed += 0.1;
+    //   wayfinder.minGap += wayfinder.minGap * 0.1;
+    //   wayfinder.maxGap += wayfinder.maxGap * 0.1;
+    // }
 
   }
 

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Run Unni</title>
+        <title>Run Unni: Special Edition</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -39,27 +39,39 @@
 
         <meta property="og:locale" content="en_GB">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="Run Unni">
+        <meta property="og:title" content="Run Unni: Special Edition">
         <meta property="og:description" content="Our charming, old-school Keralite (a kind of South Indian) hero, 'Unni', has gotten into a bit of trouble. Find out how long you can keep him out of it!">
         <meta property="og:url" content="https://brutt.site/run-unni">
         <meta property="og:site_name" content="Run Unni: Don't Let Unni Trip!">
         <meta property="og:image" content="https://raw.githubusercontent.com/bRuttaZz/run-unni/refs/heads/main/assets/game/story/frames/11.jpg">
         <meta name="twitter:card" content="https://raw.githubusercontent.com/bRuttaZz/run-unni/refs/heads/main/assets/game/story/frames/11.jpg">
-        <meta name="twitter:title" content="Run Unni!">
+        <meta name="twitter:title" content="Run Unni: Special Edition">
         <meta name="twitter:description" content="Our charming, old-school Keralite (a kind of South Indian) hero, 'Unni', has gotten into a bit of trouble. Find out how long you can keep him out of it!">
         <meta name="twitter:site" content="https://brutt.site/run-unni">
         <meta name="twitter:creator" content="@bRuttaZz">
         <meta name="twitter:image" content="https://raw.githubusercontent.com/bRuttaZz/run-unni/refs/heads/main/assets/game/story/frames/11.jpg">
 
+        <script src="https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/build/sha256.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
     </head>
     <body>
+        <div id="modal" popover="manual">
+          <div class="modal-content">
+              <center>
+                  <h2>Hi There! Let me check if you're you.</h2>
+                  <p>Say the secret spell : <input id="passSpell" type="password" placeholder="the word"></p>
+                  <p class="err password-error d-none">Nope! that's not the one!</p>
+                  <button id="modal-btn">Check</button>
+              </center>
+            </div>
+        </div>
         <div class="container justify-center">
             <div class="body-container">
                 <center>
                     <div class="justify-center">
                         <img src="assets/logo.png" width="150px" style="margin-bottom: -30px;">
                     </div>
-                    <h3>Don't Let Unni Trip!</h3>
+                    <h3 class="heading-main">Special Edition!</h3>
                     <p>
                         Our charming, old-school Keralite (a kind of South Indian) hero,
                         <a href="https://en.wikipedia.org/wiki/Unni_(Indian_name)">"Unni"</a> (<i>/ʊnniː/</i>),
