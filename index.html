@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Run Unni</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="assets/style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet"
+            crossorigin="anonymous">
+        <script
+            src="src/index.js"
+            type="module"
+            mime="text/javascript"
+        ></script>
+        <link rel="icon" type="image/png" href="assets/logo.png">
+
+        <meta name="description" content="Our charming, old-school Keralite (a kind of South Indian) hero, 'Unni', has gotten into a bit of trouble. Find out how long you can keep him out of it!">
+        <meta name="keywords" content="game, run-unni, run, unni, malayalam, kerala, dev, agraj, bruttazz, devgnair, devg, fun, 2d, js, vanilaJS, art, storyboarding, gameart">
+        <meta name="author" content="bRuttaZz">
+        <meta name="robots" content="index,follow">
+        <meta name="googlebot" content="index,follow">
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@id": "https://brutt.site/run-unni",
+                "@type": "WebPage",
+                "name": "Run Unni",
+                "url": "https://brutt.site/run-unni",
+                "description": "Our charming, old-school Keralite (a kind of South Indian) hero, 'Unni', has gotten into a bit of trouble. Find out how long you can keep him out of it!",
+                "logo": "https://raw.githubusercontent.com/bRuttaZz/run-unni/refs/heads/main/assets/logo.pngg",
+                "sameAs": [
+                    "https://devgnair.art/run-unni",
+                    "https://www.devgnair.art/run-unni",
+                    "https://www.brutt.site/run-unni"
+                ]
+            }
+        </script>
+
+        <meta property="og:locale" content="en_GB">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Run Unni">
+        <meta property="og:description" content="Our charming, old-school Keralite (a kind of South Indian) hero, 'Unni', has gotten into a bit of trouble. Find out how long you can keep him out of it!">
+        <meta property="og:url" content="https://brutt.site/run-unni">
+        <meta property="og:site_name" content="Run Unni: Don't Let Unni Trip!">
+        <meta property="og:image" content="https://raw.githubusercontent.com/bRuttaZz/run-unni/refs/heads/main/assets/game/story/frames/11.jpg">
+        <meta name="twitter:card" content="https://raw.githubusercontent.com/bRuttaZz/run-unni/refs/heads/main/assets/game/story/frames/11.jpg">
+        <meta name="twitter:title" content="Run Unni!">
+        <meta name="twitter:description" content="Our charming, old-school Keralite (a kind of South Indian) hero, 'Unni', has gotten into a bit of trouble. Find out how long you can keep him out of it!">
+        <meta name="twitter:site" content="https://brutt.site/run-unni">
+        <meta name="twitter:creator" content="@bRuttaZz">
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/bRuttaZz/run-unni/refs/heads/main/assets/game/story/frames/11.jpg">
+
+    </head>
+    <body>
+        <div class="container justify-center">
+            <div class="body-container">
+                <center>
+                    <div class="justify-center">
+                        <img src="assets/logo.png" width="150px" style="margin-bottom: -30px;">
+                    </div>
+                    <h3>Don't Let Unni Trip!</h3>
+                    <p>
+                        Our charming, old-school Keralite (a kind of South Indian) hero,
+                        <a href="https://en.wikipedia.org/wiki/Unni_(Indian_name)">"Unni"</a> (<i>/ʊnniː/</i>),
+                        has gotten into a bit of trouble.
+                        Let’s see how long you can keep him out of it!
+                    </p>
+                    <br>
+                </center>
+                <div class="game-canvas-container">
+                    <div class="game-area">
+                        <canvas class="game-canvas"></canvas>
+                        <div class="canvas-overlay indicator-pane d-none">
+                            <div class="lefties">
+                                <div class="indicators-pannel-pause menu-btn">
+                                    <!-- <span class="mdi mdi-pause"></span> -->
+                                    <img class="pause-btn" src="./assets/game/pannel-pause.png">
+                                </div>
+                            </div>
+                            <div class="righties">
+                                <div class="game-indicators">
+                                    <img src="./assets/game/magestic-gem-small.png">
+                                    <span class="gems-value">1000</span>
+                                </div>
+                                <div class="game-indicators">
+                                    <div class="respect-value justify-center">1000</div>
+                                </div>
+                                <div class="game-indicators fps-indicator">
+                                    fps : <span class="fps-value">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="canvas-overlay justify-center">
+                            <div class="canvas-modal justify-center">
+                                <img class="modal-logo" src="assets/logo.png" width="200px">
+                                <div class="head modal-heder d-none scored">dummy header</div>
+                                <div class="modal-body">loading...</div>
+                                <div style="font-size: 50px !important" class="rotate-demo-instruct paddle-jump-instruct justify-center d-none">
+                                    <span class="mdi mdi-phone-rotate-landscape"></span>
+                                </div>
+                                <div class="progress-section modal-progress justify-center">
+                                    <div class="progress-container">
+                                    <div class="loading-progress-bar" id="progressBar"></div>
+                                    </div>
+                                </div>
+                                <div class="btns button-container modal-play-btns d-none">
+                                    <img src="assets/game/btn-restart2.png" class="restart-btn">
+                                    <img src="assets/game/btn-exit2.png" class="exit-btn">
+                                </div>
+                                <div class="justify-center btn modal-close-btn d-none">
+                                    <div class="btn">Close</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-paddle-container button-container regular-btn">
+                            <div class="paddle paddle-move"></div>
+                            <div class="paddle paddle-start">
+                                <div class="btns setup-btn d-none">
+                                    <div class="start-btn-div">Start</div>
+                                    <div class="round-loader d-none"></div>
+                                </div>
+                                <div class="btns d-none play-btns">
+                                    <img src="assets/game/btn-play-.png" class="start-btn">
+                                    <img src="assets/game/btn-startover.png" class="start-with-story d-none">
+                                    <img src="assets/game/btn-restart.png" class="restart-btn d-none">
+                                    <img src="assets/game/btn-exit.png" class="exit-btn d-none">
+                                </div>
+                            </div>
+                            <div class="paddle paddle-jump">
+                                <div class="paddle-jump-intstruct d-none">
+                                    <div class="paddle-jump-instruct justify-center">
+                                        <span class="mdi mdi-gesture-tap demo-tap-to-jump d-none"></span>
+                                        <span class="mdi mdi-keyboard-space demo-space-to-jump d-none"></span>
+                                    </div>
+                                    <div class="paddle-jump-instruct-text justify-center demo-tap-to-jump d-none">Tap to jump</div>
+                                    <div class="paddle-jump-instruct-text justify-center demo-space-to-jump d-none">Click space-bar to jump</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="source-code">
+            <center>
+                <a href="https://github.com/bRuttaZz/run-unni"><span class="mdi mdi-github"></span> source</a>
+            </center>
+        </div>
+    </body>
+
+    <footer>
+        <center>
+           ⓒ 2025 <a href="https://devgnair.art">Dev G Nair</a>, <a href="https://brutt.site">Agraj P Das</a>.
+           <br>Source code is licensed under the <a href="https://mit-license.org/">MIT License</a>;
+               artwork and media files are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons CC BY 4.0</a>.
+            <a href="https://github.com/bRuttaZz/run-unni">Detailed License terms</a>
+        </center>
+    </footer>
+</html>
