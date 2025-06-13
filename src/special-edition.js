@@ -6,8 +6,8 @@ const btn = document.querySelector("#modal-btn");
 const inp = document.querySelector("#passSpell");
 const err = document.querySelector(".password-error");
 
-const hashX = '453cb53c84a6ce285d73a9aaa2414b8bf6ba2f200b912256024045f0cdbec58b';
-const ciphertext = 'U2FsdGVkX18eCwFFLHS/r//BA+TLZexmvK0l48Q16wgthdjDdVKSBVzROBfkXrDsMsuRqUBUYr28t7Tg3WQ9XA8wmfjMZC1Ccq2cypw011Y='
+const hashX = 'f3157d91f3d1f790b1771e3ee2fe95d513d8d1e65caa8cae54dec729231249e4';
+const ciphertext = 'U2FsdGVkX18YKJkCVS8I+i2vMr9KwktIEfJ3vZXtuQdh1XzyeIdnk00sYQhLsHPMs5De9HGz7v9S0/aLvP01SYtCmtW1xPx4Cncpiqnm9uaLwrUgUzvYlGaVdq7Z2VEcJaIaRjycu7ZAxhPtg345UQ=='
 
 // function encrypt(text, password) {
 //   return CryptoJS.AES.encrypt(text, password).toString();
